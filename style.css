@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+
+body {
+  font-family: "Shadows Into Light", cursive;
+  min-height: 100vh;
+  overflow: auto;
+}
+.fas.fa-spinner {
+  font-size: 2vw;
+}
+
+.fas.fa-spinner.active {
+  animation: 1s rotate infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+
+.flex-center-y {
+  align-items: center;
+}
+
+.pokemon-card {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.pokemon-card:hover {
+  background: grey;
+  cursor: pointer;
+}
+
+.pokemon-showcase {
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  height: 100vh;
+}
+
+.search-bar {
+  font-size: 2rem;
+}
+
+.pokemon-name {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pokemon-details {
+  z-index: 1;
+  position: absolute;
+  background: white;
+  width: 40%;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
